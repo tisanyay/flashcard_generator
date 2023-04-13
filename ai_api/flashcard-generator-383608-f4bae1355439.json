@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "flashcard-generator-383608",
+  "private_key_id": "f4bae1355439f85345af6be18d3cd1c140bf0a3f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC0tj7fN93lkRHU\nANURQUAYSEnDiFMLdickS7FGtRKMVAboZwHB774CZJ4WNkup1Qw2Ksq2MBU/1aFG\n9psiU0BfJwzuRwJj7On/kZcGyUn9NQO6wsQn06iAuJZtcHUcjvUZAY+KVbMn74rp\nwwGHYtha1BO7XquerqsYyRf+7xl1gWq5q/fMXnAx3Oop11Rs7M/cPxZwPnB20FEX\ntX2c0NBMOahg3gXOMwSGWPKJGVLYzJMKWdrTMKXrYf+EQP7Qana1TcqX4USWMWzt\nwga3DC9Y9mz0OVER1y6XE/42fnXU5GDymPXzmwdGKre/dYkVfDLapm5Qq8A6XmtB\nqGCC8nrJAgMBAAECggEAAUMHg5d4QdXKouTiIIWZu+xWw2Klr8z8HzeK0lV0pR33\nr8fZBHo05OXAEBtXt3ovpIa3zOAsG/IVHX6NkDFP26xd2UPBGjw4g5mMXk4DNmXU\nDXSC3m39o81kBtdvu8ZVTeUUPrmv9/t4ENShxZ4fdTErrRn56U4xjxYhUKW2dWFU\nGu8dhhBKB/4Os+mrzUciqoj1v/ntndCDBq3f0uq2qoEozszz64Bn3urVdGIslCXZ\npTyy4q+j/nyC5uLyZpOzP9WlRruOkpblj3oTr5keV6lH5+uhomuuTuLHDOm34eRT\n+ENM2UqlTMm3Uj8DtSApW4JoVVzBtyG0F7kU4nFcvQKBgQDfAoWerUkXS2NGvjRj\nQE7m/VxkDg1jwhbmWtqlAdS8DMZspaNHIz6y6H1AWV3W6fLg+zqRe0z5AiC080vC\n4Tkv+WDzSztKgbHjucm829FlLVjlLc45dwIC+CJqZ4AtnD++pU4VlQh7H635N4j8\nMkN68kIKPh8hDYUm1NVZCLRCzQKBgQDPceHQmO1eyNUM4OVwi6aaR4KuR46KyOKH\nv6k7rwTaWNorR2B+glhBjGIQ2Wz7N35a9IQEH6AD7FaQrBACcMp/AGtuhdlgFULg\nT2g9bryns+ewx6MzBkxNLT19MdUVWt1OWO00TkJU0tEn1b9RtNqFgGpfErtiFW0q\nFIsofQEv7QKBgQCcj0+xMyQh92ntyzBKEWaTIYGQOJFL3IFpHJVszBlGH43ZznsP\nQP4OacssttB7RWiea6EVa0OBeO3vOvKQEL+uH1vh0YoBZ4W0QsUPEh8x8aD726lw\njEzcOskmfBzvaEcUF0b3PdZjYb0oPcWsj7jyAks8l5oRAUXeGgLha4vpbQKBgQCV\nHiHbFvMavXcYyNlla52ZLWps6Rc4AGuGdWmrc4YjhtddYPOmPQBALi+YORM0CpIT\nw8zaQfl+mHcpi+X+OyH05VJUona9sMrf/3TJJD8MtjAITZms5gwXNjwLMLUhoq2O\n0jHA9biMzPZ4khfzHfQvHz5XlVmJiilspFPcCO+/iQKBgQDLQ6BG/zLhIuVsW7s5\nHD7F9GRgIHM3OZ19FKxRUAVxONqe/DUpylCA+vEsjIhosRRrQVtyVTrD3FE+gJKP\nQemkGfkTao3bwhehoNoqWxok7SJo560CWUKN/byMD3PoOTFXjxo47PdoyIZ6pXbv\nvuAXJ/l0GSly4uHZahNDhDSo5A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "brenden@flashcard-generator-383608.iam.gserviceaccount.com",
+  "client_id": "113428667688853964754",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/brenden%40flashcard-generator-383608.iam.gserviceaccount.com"
+}
