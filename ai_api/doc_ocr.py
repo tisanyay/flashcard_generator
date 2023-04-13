@@ -10,7 +10,7 @@ PROJECT_ID = os.environ["PROJECT_ID"]
 PROCESSOR_ID = os.environ["PROCESSOR_ID"]
 MIME_TYPE = 'application/pdf'
 
-credential_path = './ai_api/flashcard-generator-383608-f4bae1355439.json'
+credential_path = './ai_api/clientLibraryConfig-github.json'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 
 def extract_text(image_content):
