@@ -5,7 +5,7 @@
   "token_url": "https://sts.googleapis.com/v1/token",
   "service_account_impersonation_url": "https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/github-resource-access@flashcard-generator-383608.iam.gserviceaccount.com:generateAccessToken",
   "credential_source": {
-    "file": "/home/yisan/Documents/pentahack/app/ai_api/clientLibraryConfig-github.json",
+    "file": "/home/yisan/Documents/pentahack/app/ai_api/",
     "format": {
       "type": "text"
     }
