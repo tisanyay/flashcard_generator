@@ -1,5 +1,4 @@
 # flashcard_generator
-## Streamlit setup
 ### 1. Install dependencies
 ```sh
 $ pip install -r requirements.txt
