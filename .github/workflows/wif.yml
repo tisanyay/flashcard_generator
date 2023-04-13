@@ -25,5 +25,5 @@ jobs:
       uses: 'google-github-actions/auth@v1'
       with:
           token_format: 'access_token'
-          workload_identity_provider: projects/189439450845/locations/global/workloadIdentityPools/keysgithub/* 
+          workload_identity_provider: projects/189439450845/locations/global/workloadIdentityPools/keysgithub/providers/github
           service_account: github-resource-access@flashcard-generator-383608.iam.gserviceaccount.com
