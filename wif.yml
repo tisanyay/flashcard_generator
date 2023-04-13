@@ -1,7 +1,7 @@
 name: List services in GCP
 on:
   push:
-      branches: [ "master" ]
+      branches: [ "main" ]
 
 permissions:
   id-token: write
