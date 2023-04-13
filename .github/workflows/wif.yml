@@ -1,23 +1,20 @@
 name: List services in GCP
 on:
-  push:
-      branches: [ "master" ]
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  id-token: write
 
 jobs:
   Get_OIDC_ID_token:
     runs-on: ubuntu-latest
-
-    permissions:
-      id-token: 'write'
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-
     - id: 'auth'
       name: 'Authenticate to GCP'
       uses: 'google-github-actions/auth@v1'
       with:
-          token_format: 'access_token'
-          workload_identity_provider: projects/189439450845/locations/global/workloadIdentityPools/keysgithub/providers/github
-          service_account: github-resource-access@flashcard-generator-383608.iam.gserviceaccount.com
+          create_credentials_file: 'true'
+          workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
