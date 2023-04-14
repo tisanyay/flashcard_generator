@@ -7,22 +7,10 @@ import os
 
 load_dotenv()
 
-# POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/SERVICE-ACCOUNT-NAME@PROJECTID.iam.gserviceaccount.com:generateAccessToken
-
 LOCATION = os.environ["LOCATION"]
 PROJECT_ID = os.environ["PROJECT_ID"]
 PROCESSOR_ID = os.environ["PROCESSOR_ID"]
 MIME_TYPE = 'application/pdf'
-
-scopes = []
-
-creds, pid = google.auth.default()
-print(f"Obtained default credentials for the project {pid}")
-tcreds = google.auth.impersonated_credentials.Credentials(
-    source_credentials=creds,
-    target_principal="github-resource-access@flashcard-generator-383608.iam.gserviceaccount.com",
-    target_scopes=scopes
-)
 
 def extract_text(image_content):
 
@@ -48,13 +36,6 @@ def extract_text(image_content):
     return result.document
 
 if __name__ == "__main__":
-    # test_pdf_path = './test_pdf/pythagoras.pdf'
-
-    # with open(test_pdf_path, "rb") as image:
-        # image_content = image.read()
-    
-    # print(extract_text(image_content).text)
-
     FILE_PATH = './test_pdf/pythagoras.pdf'
 
     # Instantiates a client
@@ -85,5 +66,3 @@ if __name__ == "__main__":
     print("Document processing complete.")
     # print(f"Text: {document_object.text}")
     print(len(document_object.text))
-    data = document_object.text
-
