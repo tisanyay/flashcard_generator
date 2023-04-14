@@ -12,9 +12,9 @@ def load_lottieurl(url):
 flashcard_animation = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_jxgqawba.json")
 
 # --- headers ---
-st.set_page_config(page_title="Flashcard Generator:double_exclamation_mark:", page_icon=":card_index:", layout="wide")
+st.set_page_config(page_title="Flashcard Generator", page_icon=":card_index:", layout="wide")
 
-st.subheader("AI card generator :collision:")
+st.subheader("AI card generator")
 
 with st.container():
     left_column, right_column = st.columns((2,1))

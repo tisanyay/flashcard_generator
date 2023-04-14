@@ -1,17 +1,28 @@
 from google.api_core.client_options import ClientOptions
 from google.cloud import documentai_v1 as documentai
 from dotenv import load_dotenv
+import google.auth
+import google.auth.impersonated_credentials
 import os
 
 load_dotenv()
+
+# POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/SERVICE-ACCOUNT-NAME@PROJECTID.iam.gserviceaccount.com:generateAccessToken
 
 LOCATION = os.environ["LOCATION"]
 PROJECT_ID = os.environ["PROJECT_ID"]
 PROCESSOR_ID = os.environ["PROCESSOR_ID"]
 MIME_TYPE = 'application/pdf'
 
-credential_path = './ai_api/clientLibraryConfig-github.json'
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
+scopes = []
+
+creds, pid = google.auth.default()
+print(f"Obtained default credentials for the project {pid}")
+tcreds = google.auth.impersonated_credentials.Credentials(
+    source_credentials=creds,
+    target_principal="github-resource-access@flashcard-generator-383608.iam.gserviceaccount.com",
+    target_scopes=scopes
+)
 
 def extract_text(image_content):
 
