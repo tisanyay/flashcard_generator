@@ -5,16 +5,15 @@ $ cd $root_directory
 ```
 
 ### 2. Setup virtual environment and activate environment
+Create virtual environment
 ```sh
 $ python3 -m venv env
 ```
 
+Activate the environment
 ```sh
 $ env/bin/activate
 ```
-
-""" Python [] Cpp[] """
-
 
 ### 3. Install dependencies
 ```sh
