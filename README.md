@@ -1,4 +1,4 @@
-# flashcard_generator
+# Flashcard Generator
 ### 1. Change to root directory of project
 ```sh
 $ cd $root_directory
