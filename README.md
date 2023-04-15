@@ -25,13 +25,13 @@ $ pip install -r requirements.txt
 
 ### 4. Create .env file
 This will add environment variables that will be used the app
-#### **`.env`**
-```js
-PROJECT_ID={PROJECT_ID}
-LOCATION={LOCATION}
-PROCESSOR_ID={PROCESSOR_ID}
-OPENAI_API={OPENAI_API}
-```
+> #### **`.env`**
+> ```
+> PROJECT_ID={PROJECT_ID}
+> LOCATION={LOCATION}
+> PROCESSOR_ID={PROCESSOR_ID}
+> OPENAI_API={OPENAI_API}
+> ```
 Replace the values in the curly brackets
 |key|value|
 |---|---|
