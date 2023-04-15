@@ -1,6 +1,9 @@
 import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
+from ai_api.doc_ocr import extract_text
+from ai_api.tokenize_text import chunkify
+from ai_api.chadgpt import generate_qa
 
 def load_lottieurl(url):
     r = requests.get(url)
@@ -34,16 +37,25 @@ uploaded_file = st.file_uploader("Choose a PDF file")
 if uploaded_file is not None:
     # To read file as bytes:
     bytes_data = uploaded_file.getvalue()
-    st.write(bytes_data)
+
+    document_object = extract_text(bytes_data)
+    
+    chunks = chunkify(document_object.text)
+
+    qa_pairs = generate_qa(chunks)
+
+    for q, a in qa_pairs:
+        st.write(q)
+        st.write(a)
 
     # To convert to a string based IO:
-    stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
-    st.write(stringio)
+    # stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
+    # st.write(stringio)
 
     # To read file as string:
-    string_data = stringio.read()
-    st.write(string_data)
+    # string_data = stringio.read()
+    # st.write(string_data)
 
     # Can be used wherever a "file-like" object is accepted:
-    dataframe = pd.read_csv(uploaded_file)
-    st.write(dataframe)
+    # dataframe = pd.read_csv(uploaded_file)
+    # st.write(dataframe)

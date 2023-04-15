@@ -41,5 +41,5 @@ if __name__ == "__main__":
     document_object = extract_text(image_content)
 
     print("Document processing complete.")
-    # print(f"Text: {document_object.text}")
+    print(f"Text: {document_object.text}")
     print(len(document_object.text))
