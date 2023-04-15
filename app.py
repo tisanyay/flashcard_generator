@@ -43,22 +43,6 @@ with st.container():
 st.write('---')
 uploaded_file = st.file_uploader("Choose a PDF file")
 
-
-# cols = st.columns(4)
-
-# --- test cards ---
-# with cols[1]:
-    # card(
-      # title="Hello World!",
-      # text="Some description",
-      # image="http://placekitten.com/200/300",
-      # url="https://github.com/gamcoh/st-card"
-    # )
-
-# with cols[2]:
-    # card(title='answer', text='')
-
-
 if uploaded_file is not None:
     # To read file as bytes:
     bytes_data = uploaded_file.getvalue()

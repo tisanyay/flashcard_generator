@@ -12,7 +12,7 @@ $ python3 -m venv env
 
 Activate the environment
 ```sh
-$ env/bin/activate
+$ env/Scripts/activate
 ```
 
 ### 3. Install dependencies
