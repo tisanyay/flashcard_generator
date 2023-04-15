@@ -25,6 +25,7 @@ $ pip install -r requirements.txt
 
 ### 4. Create .env file
 This will add environment variables that will be used the app
+#### **`.env`**
 ```js
 PROJECT_ID={PROJECT_ID}
 LOCATION={LOCATION}
