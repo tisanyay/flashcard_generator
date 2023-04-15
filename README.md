@@ -9,15 +9,12 @@ $ cd $root_directory
 $ python3 -m venv env
 ```
 
-=== "Linux"
-    ```sh
-    $ source env/bin/activate
-    ```
-    
-=== "Windows"
-    ```sh
-    $ env/bin/activate
-    ```
+```sh
+$ env/bin/activate
+```
+
+""" Python [] Cpp[] """
+
 
 ### 3. Install dependencies
 ```sh
